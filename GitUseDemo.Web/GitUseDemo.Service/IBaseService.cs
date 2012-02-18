@@ -1,18 +1,21 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace GitUseDemo.Service
 {
-    public interface IBaseService<TViewModel,in TModel>
-    {
-
-#pragma warning disable 693
-        int Add<TModel>();
-#pragma warning restore 693
-#pragma warning disable 693
-        int Update<TModel>();
-#pragma warning restore 693
-        IList<TViewModel> GetAll();
-        TViewModel GetById<TId>(TId id);
-
+    public interface IBaseService<TEntity>    {
+      
+        int Add(TEntity entity);
+       
+        int Update(TEntity entity);
+        
+        IList<TEntity> GetAll();
+        
+        TEntity GetById(int Id);
+        
+        int Delete(TEntity entity);
     }
 }
