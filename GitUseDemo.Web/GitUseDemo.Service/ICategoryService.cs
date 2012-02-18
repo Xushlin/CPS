@@ -1,6 +1,11 @@
-﻿namespace GitUseDemo.Service
+﻿using GitUseDemo.Data;
+using GitUseDemo.ViewModel;
+
+namespace GitUseDemo.Service
 {
-    public interface ICategoryService
+    public interface ICategoryService : IBaseService<CategoryViewModel, Category>
     {
     }
+
+
 }

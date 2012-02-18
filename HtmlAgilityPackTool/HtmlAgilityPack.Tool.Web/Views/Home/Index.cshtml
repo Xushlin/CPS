@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Navigation
+    {
+    <!-- Navigation -->
+    @Html.Partial("_Navigation", null)
+}
+
+@section Sidebar
+    {
+    <!-- Sidebar -->
+    @Html.Partial("_Sidebar", null)
+}
+<style type="text/css">
+    .comparecandidatelist-image-container .span3 {
+        margin-left: 0px;
+    }
+
+    .comparecandidatelist-image-container > li {
+        margin-left: 0px;
+        margin-right: 22px;
+        margin-top: 15px;
+    }
+
+        .comparecandidatelist-image-container > li > img {
+            max-height: 400px;
+            height: 400px;
+            text-align: center;
+            line-height: 400px;
+        }
+</style>
+<ul class="row-fluid comparecandidatelist-image-container">
+    @*  @{
+        foreach (var show in Model)
+        {
+            <li class="span3">
+                <div class="comparecandidatelist-image-body">
+                    <img data-original="@show.Url" class="lazy" src="~/Images/grey.gif"/>
+                </div>
+            </li>
+        }
+    }*@
+    <li class="span3">
+        <img data-original="http://ww1.sinaimg.cn/bmiddle/682a4eb4jw1dytupdria7j.jpg" class="lazy" src="~/Images/grey.gif" />
+    </li>
+    <li class="span3">
+        <img data-original="http://ww1.sinaimg.cn/bmiddle/6f81a95bjw1dz9os24npdj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww1.sinaimg.cn/bmiddle/682a4eb4jw1dyrb2vteicj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww4.sinaimg.cn/bmiddle/682a4eb4jw1dzaomkagtkj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+
+    <li class="span3">
+        <img data-original="http://ww4.sinaimg.cn/bmiddle/6fe7b32fgw1dz9wk5cflrj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww3.sinaimg.cn/bmiddle/6463577djw1dz9k86ar99j.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww3.sinaimg.cn/bmiddle/7216dac4jw1dz9d7xqr4kj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww2.sinaimg.cn/bmiddle/706aa1d0jw1dzah8oz669j.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww1.sinaimg.cn/bmiddle/4746bd3ejw1dzagbwoqbvj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww1.sinaimg.cn/bmiddle/986487aajw1dwnnl9k7i1j.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww3.sinaimg.cn/bmiddle/986487aajw1dzahnv0obvj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww2.sinaimg.cn/bmiddle/70b6e3f1jw1dndq7wzerwj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+
+    <li class="span3">
+        <img data-original="http://ww4.sinaimg.cn/bmiddle/70b6e3f1gw1dnwkx2rq1gj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww1.sinaimg.cn/bmiddle/70b6e3f1jw1dod245m3i8j.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww2.sinaimg.cn/bmiddle/70b6e3f1jw1dpbmo4e924j.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww3.sinaimg.cn/bmiddle/70b6e3f1jw1dpn3fpqn6gj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww2.sinaimg.cn/bmiddle/6e4833ebjw1dza3to588hj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww4.sinaimg.cn/bmiddle/6e929425jw1dz8u1n2lcsj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww3.sinaimg.cn/bmiddle/6e929425jw1dz8u23bdzyj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww3.sinaimg.cn/bmiddle/6e929425jw1dz8u5w3k7wj.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+    <li class="span3">
+        <img data-original="http://ww1.sinaimg.cn/bmiddle/6fe7b32fgw1dz9wnffnd1j.jpg" class="lazy" src="~/Images/grey.gif" /></li>
+</ul>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("img.lazy").lazyload();
+    });
+</script>

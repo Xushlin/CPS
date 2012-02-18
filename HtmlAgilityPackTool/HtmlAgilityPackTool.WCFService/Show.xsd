@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Show"
+    targetNamespace="http://tempuri.org/Show.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/Show.xsd"
+    xmlns:mstns="http://tempuri.org/Show.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="ShowRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ShowId" type="xs:int"/>
+        <xs:element name="Name" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="ShowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ShowId" type="xs:string"/>
+        <xs:element name="Name" type="xs:string"/>
+        <xs:element name="Url" type="xs:string"/>
+        <xs:element name="Occupation" type="xs:string"/>
+        <xs:element name="Publisher" type="xs:string"/>
+        <xs:element name="CreateTime" type="xs:dateTime"/>
+        <xs:element name="ChildUrl" type="xs:string"/>
+        <xs:element name="IsNew" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ShowDetailRequest">
+    <xs:complexType >
+      <xs:sequence>
+        <xs:element name="ShowId" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ShowDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ShowDetailId" type="xs:string"/>
+        <xs:element name="ShowId" type="xs:string"/>
+        <xs:element name="Name" type="xs:string"/>
+        <xs:element name="Url" type="xs:string"/>
+        <xs:element name="CreateTime" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

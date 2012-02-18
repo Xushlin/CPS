@@ -1,0 +1,30 @@
+﻿
+
+<div class="well sidebar-nav">
+    <ul class="nav nav-list">
+        <li class="nav-header">Prepare</li>
+@*        <li class="@(Model.CurrentNavigation == Navigation.HomePack ? "active" : "")"><a href="@Url.Action(controllerName: "Home", actionName: "Pack")">Packs</a></li>*@
+@*        @if (Model.PackStatus != PackStatus.Published)*@
+@*        {*@
+@*            <li class="@(Model.CurrentNavigation == Navigation.PropertyIndex ? "active" : "")"><a href="@Url.Action(controllerName: "Property", actionName: "Index", routeValues: new { Id = Model.Id })">Properties</a></li>*@
+@*            <li class="@(Model.CurrentNavigation == Navigation.CompetenceIndex ? "active" : "")"><a href="@Url.Action(controllerName: "Competence", actionName: "Index", routeValues: new { Id = Model.Id })">Competences</a></li>*@
+@*            <li class="@(Model.CurrentNavigation == Navigation.CandidateStatus ? "active" : "")"><a href="@Url.Action(controllerName: "Candidate", actionName: "CandidateStatus", routeValues: new { id = Model.Id })">Candidates</a></li>*@
+@*            <li class="@(Model.CurrentNavigation == Navigation.SharedUserList ? "active" : "")"><a href="@Url.Action(controllerName: "Pack", actionName: "SharedUserList", routeValues: new { id = Model.Id })">Share Pack</a></li>*@
+@*            <li class="nav-header">Contact</li>*@
+@*            <li class="@(Model.CurrentNavigation == Navigation.ContactIndex ? "active" : "")"><a href="@Url.Action(controllerName: "Contact", actionName: "Index", routeValues: new { id = Model.Id })">Contact me</a></li>*@
+@*            <li class="@(Model.CurrentNavigation == Navigation.CustomerIndex ? "active" : "")"><a href="@Url.Action(controllerName: "Contact", actionName: "ContactCustomer", routeValues: new { id = Model.Id })">Customer</a></li>*@
+@*            *@
+@*        }*@
+@*        <li class="nav-header">Publish</li>*@
+@*        <li class="@(Model.CurrentNavigation == Navigation.PublishPreview ? "active" : "")"><a href="@Url.Action(controllerName: "PackPreview", actionName: "Index", routeValues: new { packid = Model.Id, candidateId = string.Empty, customer = Convert.ToBase64String(System.Text.Encoding.Default.GetBytes("false")) })">Preview</a></li>*@
+@*        <li class="@(Model.CurrentNavigation == Navigation.PublishIndex ? "active" : "")"><a href="@Url.Action(controllerName: "Pack", actionName: "PublishIndex", routeValues: new { id = Model.Id })">Publish</a></li>*@
+@*        @if (Model.PackStatus == PackStatus.Published)*@
+@*        {*@
+@*            <li class="@(Model.CurrentNavigation == Navigation.PackInfomation ? "active" : "")"><a href="@Url.Action(controllerName: "Pack", actionName: "PackInformation", routeValues: new { packid = Model.Id, candidateId = string.Empty })">PackInformation</a></li>*@
+@*            *@
+@*        }*@
+    </ul>
+</div>
+<!--/.well -->
+
+<!--/.well -->

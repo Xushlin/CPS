@@ -39,14 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBaseService.cs" />
+    <Compile Include="IModel.cs" />
     <Compile Include="Impl\CategoryService.cs" />
     <Compile Include="ICategoryService.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="IViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GitUseDemo.Data\GitUseDemo.Data.csproj">
       <Project>{43bea4df-e863-471f-9b5a-c52c7fde5099}</Project>
       <Name>GitUseDemo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GitUseDemo.ViewModel\GitUseDemo.ViewModel.csproj">
+      <Project>{58D69F5A-8D22-417B-A22F-9228BBD3B30A}</Project>
+      <Name>GitUseDemo.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
