@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitUseDemo.ViewModel", "Git
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitUseDemo.Data", "GitUseDemo.Data\GitUseDemo.Data.csproj", "{43BEA4DF-E863-471F-9B5A-C52C7FDE5099}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitUseDemo.Service", "GitUseDemo.Service\GitUseDemo.Service.csproj", "{5CF2D5E0-4762-4AA3-8797-0A83DBBD947D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{43BEA4DF-E863-471F-9B5A-C52C7FDE5099}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43BEA4DF-E863-471F-9B5A-C52C7FDE5099}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43BEA4DF-E863-471F-9B5A-C52C7FDE5099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF2D5E0-4762-4AA3-8797-0A83DBBD947D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF2D5E0-4762-4AA3-8797-0A83DBBD947D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF2D5E0-4762-4AA3-8797-0A83DBBD947D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF2D5E0-4762-4AA3-8797-0A83DBBD947D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
