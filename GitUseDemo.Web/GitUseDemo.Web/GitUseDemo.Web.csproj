@@ -296,6 +296,16 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GitUseDemo.Data\GitUseDemo.Data.csproj">
+      <Project>{43bea4df-e863-471f-9b5a-c52c7fde5099}</Project>
+      <Name>GitUseDemo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GitUseDemo.ViewModel\GitUseDemo.ViewModel.csproj">
+      <Project>{58d69f5a-8d22-417b-a22f-9228bbd3b30a}</Project>
+      <Name>GitUseDemo.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
