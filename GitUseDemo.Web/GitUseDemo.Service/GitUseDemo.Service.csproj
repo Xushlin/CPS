@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBaseService.cs" />
     <Compile Include="Impl\CategoryService.cs" />
     <Compile Include="ICategoryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
